@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>signupPage</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/signup.css">
+</head>
+<body>
+<div id="contianer">
+    <div id="login_container">
+        <div id="login_contianer_left"></div>
+        <div id="login_container_right">
+            <div id="login_text">Sign Up</div>
+            <input id="user_id" type="text" placeholder="아이디">
+            <input id="user_pw" type="password" placeholder="비밀번호">
+            <input id="user_pw_check" type="password" placeholder="비밀번호 재확인">
+            <span id="incorrect">비밀번호가 틀립니다</span>
+            <span id="correct">비밀번호가 일치합니다.</span>
+            <button id="login_btn" onclick="checkPw()">회원가입</button>
+            <!--                <div id="text">회원가입을 <a href="">환영합니다</a> </div>-->
+        </div>
+    </div>
+</div>
+</body>
+<script>
+
+    let pw1 = ''
+    let pw2 = ''
+
+    $('#user_pw').keyup(function () {
+        pw1 = $('#user_pw').val()
+    })
+    $('#user_pw_check').keyup(function () {
+        pw2 = $('#user_pw_check').val()
+        if (pw1 !== pw2) {
+            $('#incorrect').css('display', 'block')
+            $('#correct').css('display', 'none')
+        } else {
+            $('#correct').css('display', 'block')
+            $('#incorrect').css('display', 'none')
+        }
+
+        if (pw1 == '' || pw2 == '') {
+            $('#incorrect').css('display', 'none')
+            $('#correct').css('display', 'none')
+        }
+    })
+
+    function checkPw() {
+        let id = $('#user_id').val()
+        if (id == '' || pw1 == '') {
+            alert('제대로 입력하세요!')
+            return false
+        }
+        if (pw1 !== pw2) {
+            alert('비밀번호가 틀립니다')
+            return false;
+        } else {
+            alert('회원가입을 환영합니다.')
+        }
+    }
+
+</script>
+</html>

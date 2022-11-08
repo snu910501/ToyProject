@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+}
+
+#popup_container {
+    margin: auto;
+    width: 1080px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+}
+
+#popup_box {
+    width: 700px;
+    height: 1040px;
+    border: 1px solid black;
+    padding: 20px 160px 0 160px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    margin: auto;
+    border-radius: 20px;
+}
+
+#popup_img {
+    width: 400px;
+    height: 560px;
+    background-image: url(../img/book4.png);
+    background-size: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+#popup_title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#popup_seller {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#popup_seller div {
+    display: inline-block;
+    width: 20%;
+    font-weight: 400;
+}
+
+#seller_contract {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#seller_contract div {
+    display: inline-block;
+    width: 20%;
+    font-weight: 400;
+}
+
+#book_preservation {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#book_preservation div {
+    display: inline-block;
+    width: 20%;
+    font-weight: 400;
+}
+
+#comment {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#comment div {
+    width: 20%;
+    font-weight: 400;
+}
+
+textarea{
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid black;
+    margin-top: 15px;
+    border-radius: 20px;
+    resize: unset;
+}
+
+#close_btn{
+    width: 400px;
+    height: 40px;
+    border: 1px solid #FD6767;
+    margin-top: 15px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+    color: #FD6767;
+    font-size: 18px;
+    font-weight: bold;
+}

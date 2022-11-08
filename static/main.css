@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+#spare_div {
+    width: 220px;
+}
+
+#container {
+    width: 1080px;
+    height: 100vh;
+
+    margin: auto;
+}
+
+#navigation {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navigation #middle_container {
+    width: 110px;
+    height: 30px;
+
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#navigation #middle_container span {
+    color: #FD6767;
+}
+
+#navigation #right_container {
+    width: 220px;
+    height: 30px;
+    display: flex;
+}
+
+#navigation #right_container #sell_btn {
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #FD6767;
+    color: #FD6767;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#navigation #right_container #login_btn {
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+    background-color: transparent;
+    border: 1px solid #FD6767;
+    color: #FD6767;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/*------------------- 여기까지가 Navigation입니다.-----------------------*/
+
+#main_container {
+    width: 100%;
+    height: 500px;
+}
+
+#main_container #main_container_text {
+    width: 71px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 115px;
+    margin-bottom: 35px;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+#main_container #main_container_show {
+    width: 800px;
+    height: 350px;
+    margin: 0 115px 0 115px;
+    display: flex;
+}
+
+#main_container #main_container_show #book_description {
+    font-weight: bold;
+}
+
+#main_container #main_container_show #book_img {
+
+}
+
+#main_container #main_container_show #book_title {
+    width: 100%;
+    font-weight: bold;
+    font-size: 32px;
+    margin-left: 60px;
+}
+
+#main_container #main_container_show #book_title span {
+    color: #56B634;
+}
+
+#main_container #main_container_show #book_author {
+    width: 100%;
+    margin-left: 60px;
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+#main_container #main_container_show #book_author div {
+    width: 10%;
+    height: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+#main_container #main_container_show #book_field {
+    width: 100%;
+    margin-left: 60px;
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+#main_container #main_container_show #book_field div {
+    width: 10%;
+    height: 20px;
+    font-weight: 400;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+#main_container #main_container_show #book_star {
+    width: 100%;
+    margin-left: 60px;
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+#main_container #main_container_show #book_star div {
+    width: 10%;
+    height: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    font-weight: 400;
+}
+
+#main_container #main_container_show #book_price {
+    width: 100%;
+    margin-left: 60px;
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+#main_container #main_container_show #book_price div {
+    width: 10%;
+    height: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    font-weight: 400;
+}
+
+#book_sell {
+    margin-left: 60px;
+    width: calc(100% - 40px);
+    height: 40px;
+    margin-top: 50px;
+    border: 1px solid #FD6767;
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FD6767;
+}
+
+/*----------------------여기까지 main container-------------------*/
+
+#inline {
+    width: 100%;
+    height: 10px;
+    background-color: #f1f1f1;
+}
+
+#book_list_container {
+    width: 100%;
+    height: 100%;
+    padding: 50px 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+}
+
+#book_list_container .book_box {
+    width: 260px;
+    height: 470px;
+    margin-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+#book_list_container .book_box img {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+
+#book_list_container .book_box_title{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#book_list_container .book_box_price{
+    margin-top: 10px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
